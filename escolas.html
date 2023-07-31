@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
   <meta charset="utf-8">
@@ -131,7 +131,7 @@
   <!-- Vendor JS Files -->
   <script type="text/javascript">
 const urlParams = new URLSearchParams(window.location.search);
-const escola = urlParams.get("escola") // livros
+const escola_url = urlParams.get("escola") // livros
 
         // Obter o valor da
 
@@ -142,7 +142,7 @@ const escola = urlParams.get("escola") // livros
         mapa = document.getElementById("mapa"),
         metaTag = document.querySelector('meta[name="description"]');
 
-     fetch(escola+".json")
+     fetch(escola_url+".json")
         .then(response => response.json())
         .then(data => {
           console.log(data);
